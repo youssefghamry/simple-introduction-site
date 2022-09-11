@@ -1,0 +1,341 @@
+    /*                 
+font awesome conjs
+poppins font
+شرح  =>
+display
+ box-sizing
+    justify-content: space-between;
+    align-items: center;
+        background-size: cover;
+    background-attachment: fixed;
+
+
+*/
+    
+     :root {
+        --min-co: #f3d1cf;
+        --min-co2: #8d3168;
+        --min-co3: #2f4e6b;
+        --min-co4: #c23c7f;
+        --min-co5: #000612;
+        --min-co6: #3a6cf4;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        /* لتنظيم الحدود داخل العنصر */
+        box-sizing: border-box;
+        /* جعل الاسكرول مرن */
+        scroll-behavior: smooth;
+        text-transform: capitalize;
+    }
+    
+    body {
+        font-family: Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+    }
+    /* header */
+    
+    header {
+        background-color: var(--min-co3);
+        width: 100%;
+        /* لجعل الهيدر ثابت */
+        position: fixed;
+        z-index: 1000;
+        /*  */
+        display: flex;
+        /* جعل مسافة بين العناصر */
+        justify-content: space-between;
+        /*  */
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    nav a {
+        /* ازالة الخط اسفل الرابط */
+        text-decoration: none;
+        color: #3a6cf4;
+        margin: 10px;
+        font-size: 1.2em;
+    }
+    
+    .logo {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.7em;
+        color: #3a6cf4;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: var(--min-co4);
+    }
+    /* end header */
+    /* section [1] */
+    
+    section {
+        padding: 100px 200px;
+    }
+    
+    .main {
+        width: 100%;
+        /* فيو بورت  */
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        /* no-repeat = لمنع التكرار  */
+        background: url(images/shuffle-01.jpg) no-repeat;
+        background-size: cover;
+        /*  */
+        background-position: center;
+        /* لجعل الصورة ثابتة */
+        background-attachment: fixed;
+    }
+    
+    .main h2 {
+        color: white;
+        font-size: 1.5em;
+    }
+    
+    .main h2 span {
+        color: var(--min-co6);
+        font-size: 3em;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    
+    .main h3 {
+        color: white;
+        font-size: 2em;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .main-btn {
+        color: #fff;
+        background-color: var(--min-co6);
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: 900;
+        display: inline-block;
+        padding: 0.9em;
+        letter-spacing: 1px;
+        border-radius: 25px;
+        margin-bottom: 40px;
+        transition: 1s;
+    }
+    
+    .main-btn:hover {
+        background-color: var(--min-co3);
+        /* لتكبير الزر */
+        transform: scale(1.1);
+    }
+    
+    .social-icons a {
+        color: #fff;
+        font-size: 1.7em;
+        padding-right: 30px;
+        text-decoration: none;
+        transition: 1s;
+    }
+    
+    .social-icons a:hover {
+        font-size: 2.5em;
+    }
+    
+    .social-icons .icofont-linkedin:hover {
+        color: rgb(36, 96, 235);
+    }
+    
+    .social-icons .icofont-facebook:hover {
+        color: blue;
+    }
+    
+    .social-icons .icofont-twitter:hover {
+        color: #16cedf;
+    }
+    
+    .social-icons .icofont-youtube:hover {
+        color: rgb(241, 34, 34);
+    }
+    /*end section [1] */
+    /* section [2] */
+    
+    li {
+        font-style: none;
+    }
+    
+    #services {
+        min-height: 100vh;
+        /* no-repeat = لمنع التكرار  */
+        background: url(images/shuffle-02.jpg) no-repeat;
+        background-size: cover;
+        /*  */
+        background-position: center;
+        /* لجعل الصورة ثابتة */
+        background-attachment: fixed;
+    }
+    
+    .title {
+        display: flex;
+        justify-content: center;
+        color: var(--min-co6);
+        font-size: 2.2em;
+        font-weight: 800;
+        margin-bottom: 30px;
+    }
+    
+    .content {
+        display: flex;
+        justify-content: center;
+        /* column تحت بعض ROW  هل الكروت جمب بعض  */
+        flex-direction: row;
+        /* لظبط مساحة الكروت */
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        background-color: #fff;
+        width: 20em;
+        /* ظل */
+        box-shadow: 0 5px 25px rgba(1, 1, 1, 55%);
+        /*  */
+        border-radius: 25px;
+        padding: 25px;
+        margin: 15px;
+        transition: 1s;
+    }
+    
+    .card:hover {
+        transform: scale(1.1);
+    }
+    
+    .icon {
+        color: #3a6cf4;
+        font-size: 4em;
+        text-align: center;
+    }
+    
+    .info {
+        text-align: center;
+    }
+    
+    .info h3 {
+        color: #3a6cf4;
+        font-size: 1.2em;
+        font-weight: 700;
+        /* margin: 10px; */
+    }
+    /* end section [2] */
+    /*  section [3] */
+    
+    .projects {
+        min-height: 100vh;
+        /* no-repeat = لمنع التكرار  */
+        background: url(images/subscribe.jpg) no-repeat;
+        background-size: cover;
+        /*  */
+        background-position: center;
+        /* لجعل الصورة ثابتة */
+        background-attachment: fixed;
+    }
+    
+    .projects .content {
+        margin-top: 30px;
+    }
+    
+    .project-card {
+        background-color: #fff;
+        border: 1px solid #fff;
+        /* min-height: 11em; */
+        width: 15em;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 20px;
+        transition: 1s ease;
+    }
+    
+    .project-card:hover {
+        transform: scale(1.1);
+    }
+    /* لتبيض الصورة  */
+    
+    .project-card:hover .project-image {
+        opacity: 0.9;
+    }
+    
+    .project-image img {
+        width: 100%;
+    }
+    
+    .project-info {
+        padding: 1em;
+    }
+    
+    .project-category {
+        font-size: 0.8em;
+        color: #000612;
+    }
+    
+    .project-title {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-top: 10px;
+    }
+    
+    .more-details {
+        text-decoration: none;
+        color: var(--min-co6);
+    }
+    /* end section [3] */
+    /*  section [4] */
+    
+    .card a {
+        text-decoration: none;
+        color: var(--min-co3);
+    }
+    
+    .card a:hover {
+        color: var(--min-co2);
+    }
+    
+    .icofont-email,
+    .icofont-phone {
+        color: #2f4e6b;
+        font-size: 0.8em;
+    }
+    
+    .contact .card {
+        width: 15em;
+        /*  */
+    }
+    /* end section [4] */
+    
+    .footer {
+        background-color: var(--min-co3);
+        color: #fff;
+        padding: 2em;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* @ */
+    
+    @media (max-width: 850px) {
+        body {
+            font-size: 14px;
+        }
+        section {
+            padding: 100px 5px;
+        }
+        .main h2 span {
+            font-size: 2em;
+            margin-top: 5px;
+        }
+        .main h3 {
+            font-size: 1.2em;
+        }
+    }
